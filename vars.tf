@@ -1,8 +1,13 @@
 variable "env" {}
 variable "tags" {}
-#subnet_ids = local.db_subnets
-#vpc_id = local.vpc_id
-#sg_ingress_cidr = local.app_subnets_cidr
 variable "subnet_ids" {}
 variable "vpc_id" {}
 variable "sg_ingress_cidr" {}
+variable "rds_type" {}
+variable "db_port" {}
+variable "engine_family" {}
+variable "engine" {}
+variable "engine_version" {}
+variable "backup_retention_period" {}
+variable "preferred_backup_window" {}
+variable "skip_final_snapshot" {}
